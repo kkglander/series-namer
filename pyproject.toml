@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "series-namer"
+version = "0.0.1"
+description = "Simple CLI made to rename TV show files to Jellyfin conventions"
+dependencies = [
+    "typer",
+    "typing-extensions",
+    "natsort",
+]
+
+[project.scripts]
+rip-factory = "series_namer.series_namer:main"

@@ -9,7 +9,7 @@ from natsort import natsorted
 app = typer.Typer()
 
 @app.command()
-def checkfile(
+def cli(
         files: List[Path], 
         title: Annotated[str, typer.Option("--title", "-t", prompt="Enter the title of the show", help="Title of television show.")],
         season: Annotated[int, typer.Option("--season", "-s",help="Season of the television show")]= 1,
@@ -26,6 +26,9 @@ def checkfile(
         else:
             print(f"{file} doesn't exist. :(")
         print("\n")
+
+def main():
+    app()
 
 
 if __name__ == "__main__":
