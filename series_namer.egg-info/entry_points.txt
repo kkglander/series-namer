@@ -1,2 +1,0 @@
-[console_scripts]
-rip-factory = rip_factory.rip_factory:main

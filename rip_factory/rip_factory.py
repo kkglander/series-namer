@@ -19,8 +19,9 @@ def cli(
     for i in range(len(files)):
         file = files[i]
         if file.is_file():
+            ext = file.suffix
             newName = f"{title} S{season:02d}E{episode + i:02d}"
-            newFile = file.parent / newName
+            newFile = (file.parent / newName).with_suffix(ext)
             file.rename(newFile)
             print(f"{file} has been renamed to {newFile}.")
         else:

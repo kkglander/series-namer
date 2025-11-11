@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: series-namer
-Version: 0.0.1
-Summary: Simple CLI made to rename TV show files to Jellyfin conventions
-Requires-Dist: typer
-Requires-Dist: typing-extensions
-Requires-Dist: natsort

@@ -3,9 +3,9 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "series-namer"
+name = "rip-factory"
 version = "0.0.1"
-description = "Simple CLI made to rename TV show files to Jellyfin conventions"
+description = "Simple CLI made to rename TV show files to match Jellyfin conventions"
 dependencies = [
     "typer",
     "typing-extensions",
